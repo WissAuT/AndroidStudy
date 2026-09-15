@@ -16,8 +16,8 @@ import com.example.denistheteacher.ui.theme.DenisTheTeacherTheme
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
-        setContent {
+        enableEdgeToEdge()// на весь экран
+        setContent { // говорит о том что вот содержимое экрана
             DenisTheTeacherTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
                     Greeting(
